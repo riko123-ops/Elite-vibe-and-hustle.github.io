@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+.menu__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo{
+    color: #fff;
+    font-size: 30px;
+}
+
+.logo span{
+    color: #e8491d;
+}
+
+
+header .container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    order: 3;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e8491d;
+}
+
+.dropdown__menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown__menu {
+display: block;
+}
+
+.dropdown__menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown__menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown__menu ul li a:hover {
+    background-color: #555;
+    color: #e8491d;
+}
+
+.fas {
+    float: right;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #e8491d; /* Appealing color for hero */
+}
+
+.content-section {
+    padding: 30px 0;
+    text-align: center;
+    display: none;
+    min-height: 300px; /* Ensure sections have some height */
+}
+
+#home {
+    background-color: #f9f5f0; /* Light, warm color */
+    display: flexbox;
+}
+
+#music {
+    background-color: #e6f7ff; /* Light blue */
+}
+
+#art {
+    background-color: #f0f8ff; /* Alice blue */
+}
+
+#lifestyle {
+    background-color: #fff0f5; /* Lavender blush */
+}
+
+#eventPlanning {
+    background-color: #f5f5dc; /* Beige */
+}
+
+#voiceOver {
+    background-color: #ffe4e1;
+}
